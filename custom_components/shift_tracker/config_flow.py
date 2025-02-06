@@ -1,5 +1,6 @@
 from homeassistant import config_entries
 from .const import DOMAIN
+from .options_flow import ShiftTrackerOptionsFlowHandler
 
 class ShiftTrackerConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     """Handle the initial config flow."""
@@ -11,5 +12,4 @@ class ShiftTrackerConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @staticmethod
     def async_get_options_flow(entry):
         """Return the options flow handler for Home Assistant."""
-        from .options_flow import ShiftTrackerOptionsFlowHandler
         return ShiftTrackerOptionsFlowHandler(entry)
