@@ -1,13 +1,39 @@
 {
-    "config": {
-      "step": {
-        "user": {
-          "data": {
-            "start_date": "Startdatum (DD.MM.YYYY)",
-            "repeat_every": "Wiederholung alle (z. B. 7d, 4w, 1m)",
-            "shift_pattern": "Schichtschema (z. B. Frei, Früh, Spät, Nacht)"
-          }
+  "config": {
+    "step": {
+      "init": {
+        "title": "Schichtplan-Einstellungen",
+        "description": "Bitte gib das Startdatum und die Anzahl der verschiedenen Schichten an.",
+        "data": {
+          "start_date": "Erster Tag der Schicht (TT.MM.JJJJ)",
+          "shift_count": "Anzahl verschiedener Schichten"
+        }
+      },
+      "shifts": {
+        "title": "Schichten definieren",
+        "description": "Gib für jede Schicht einen Namen sowie optional eine Start- und Endzeit an.",
+        "data": {
+          "shift_name": "Schichtname",
+          "shift_start": "Startzeit (hh:mm)",
+          "shift_end": "Endzeit (hh:mm)"
+        }
+      },
+      "schedule": {
+        "title": "Schichtmuster eingeben",
+        "description": "Gib dein persönliches Schichtmuster ein. Jede Zeile stellt einen Tag dar.",
+        "data": {
+          "shift_pattern": "Schichtmuster (eine Schicht pro Zeile)"
         }
       }
     }
-  }  
+  },
+  "options": {
+    "step": {
+      "schedule": {
+        "description_placeholders": {
+          "cycle_length": "Schichtzyklus: {cycle_length} Tage"
+        }
+      }
+    }
+  }
+}
