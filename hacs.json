@@ -1,0 +1,13 @@
+{
+  "name": "HA Shift Tracker",
+  "description": "Custom Integration for Home Assistant to track shift schedules",
+  "domain": "shift_tracker",
+  "repository": "https://github.com/dein-github/ha-shift-tracker",
+  "documentation": "https://github.com/homehunter1911/HA-Shift-Tracker",
+  "issue_tracker": "https://github.com/homehunter1911/HA-Shift-Tracker/issues",
+  "source": "custom_components/shift_tracker",
+  "version": "1.0.0",
+  "requirements": [],
+  "codeowners": ["@homehunter1911"],
+  "iot_class": "local_polling"
+}
