@@ -8,6 +8,11 @@ from .const import DOMAIN
 
 SCHEDULES_PATH = os.path.join(os.path.dirname(__file__), "schedules")
 
+import voluptuous as vol
+import homeassistant.helpers.config_validation as cv
+from homeassistant import config_entries
+from .const import DOMAIN
+
 class ShiftTrackerOptionsFlowHandler(config_entries.OptionsFlow):
     """Handles options for HA Shift Tracker."""
 
@@ -31,7 +36,6 @@ class ShiftTrackerOptionsFlowHandler(config_entries.OptionsFlow):
         return self.async_show_form(
             step_id="init",
             data_schema=data_schema,
-            description_placeholders={},
             title="config.step.init.title",
             description="config.step.init.description"
         )
