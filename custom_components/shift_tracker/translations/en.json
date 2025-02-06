@@ -1,13 +1,39 @@
 {
-    "config": {
-      "step": {
-        "user": {
-          "data": {
-            "start_date": "Start date (DD.MM.YYYY)",
-            "repeat_every": "Repeat every (e.g., 7d, 4w, 1m)",
-            "shift_pattern": "Shift pattern (e.g., Off, Early, Late, Night)"
-          }
+  "config": {
+    "step": {
+      "init": {
+        "title": "Shift Schedule Settings",
+        "description": "Please enter the start date and the number of different shifts.",
+        "data": {
+          "start_date": "First shift day (DD.MM.YYYY)",
+          "shift_count": "Number of different shifts"
+        }
+      },
+      "shifts": {
+        "title": "Define Shifts",
+        "description": "Enter a name for each shift and optionally specify a start and end time.",
+        "data": {
+          "shift_name": "Shift name",
+          "shift_start": "Start time (hh:mm)",
+          "shift_end": "End time (hh:mm)"
+        }
+      },
+      "schedule": {
+        "title": "Enter Shift Pattern",
+        "description": "Enter your personal shift pattern. Each line represents one day.",
+        "data": {
+          "shift_pattern": "Shift pattern (one shift per line)"
         }
       }
     }
-  }  
+  },
+  "options": {
+    "step": {
+      "schedule": {
+        "description_placeholders": {
+          "cycle_length": "Shift cycle: {cycle_length} days"
+        }
+      }
+    }
+  }
+}
