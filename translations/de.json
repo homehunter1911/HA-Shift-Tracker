@@ -1,0 +1,13 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "data": {
+            "start_date": "Startdatum (DD.MM.YYYY)",
+            "repeat_every": "Wiederholung alle (z. B. 7d, 4w, 1m)",
+            "shift_pattern": "Schichtschema (z. B. Frei, Früh, Spät, Nacht)"
+          }
+        }
+      }
+    }
+  }  
